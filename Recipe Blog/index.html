@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masala Magic - Authentic Indian Recipes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Masala Magic</h1>
+            <ul>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#submit">Submit Recipe</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="hero" class="hero-section">
+            <h2>Spice Up Your Kitchen: Discover the Magic of Indian Cooking.</h2>
+            <p>Featuring authentic regional dishes, submitted by chefs like you!</p>
+        </section>
+
+        <hr>
+
+        <section id="search">
+            <h2>Find Your Next Meal</h2>
+            <div class="search-bar">
+                <label for="recipe-search">Search by Dish Name:</label>
+                <input type="text" id="recipe-search" placeholder="e.g., Tikka, Biryani, Dosa">
+                <button type="button" id="search-button">Search</button>
+            </div>
+            <p id="search-feedback" class="feedback-message"></p>
+        </section>
+        
+        <hr>
+
+        <section id="recipes">
+            <h2>Popular Recipes This Week</h2>
+            <div class="recipe-grid">
+                
+                <div class="recipe-card" data-dish="Chicken Tikka Masala, main, non-veg">
+                    <div class="recipe-image">
+                        
+
+<img src="https://media.istockphoto.com/id/1227594550/photo/chicken-curry-creamy-chicken-butter.jpg?s=612x612&w=0&k=20&c=U9SzDx7mjCA5iS1qb8cDUNNkIGD6mJJhwLvEHXL-OlE=" width="500" alt="Chicken Tikka Masala">
+ 
+                    </div>
+                    <h3>Chicken Tikka Masala</h3>
+                    <p class="details">Category: Non-Vegetarian Main | Prep Time: 30 min</p>
+                    <div class="rating" data-recipe="tikka" data-rating="4">
+                        ⭐⭐⭐⭐☆
+                    </div>
+                    <button class="rate-button" data-recipe-id="tikka">Rate this (4/5)</button>
+                </div>
+
+                <div class="recipe-card" data-dish="Vegetable Biryani, main, veg">
+                    <img src="https://www.chefkunalkapur.com/wp-content/uploads/2021/03/veg-biryani-scaled.jpeg?v=1618288847" width="500" alt="Vibrant vegetable biryani dish">
+                    <h3>Hyderabadi Veg Biryani</h3>
+                    <p class="details">Category: Vegetarian Main | Prep Time: 45 min</p>
+                    <div class="rating" data-recipe="biryani" data-rating="5">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <button class="rate-button" data-recipe-id="biryani">Rate this (5/5)</button>
+                </div>
+
+                <div class="recipe-card" data-dish="Aloo Samosa, snack, veg">
+                    <div class="recipe-image">
+                        
+
+<img src="https://media.istockphoto.com/id/1430060145/photo/sweet-tasty-fried-indian-dish-samosha-indian-delicious-deep-fried-breakfast-samosa-also-know.jpg?s=612x612&w=0&k=20&c=bxOAfJThGKNSzugC7Id_vPO9l5UPljCKSgOc18-2vS0=" width="500" alt="Aloo Samosa">
+
+                    </div>
+                    <h3>Classic Aloo Samosas</h3>
+                    <p class="details">Category: Vegetarian Snack | Prep Time: 20 min</p>
+                    <div class="rating" data-recipe="samosa" data-rating="4">
+                        ⭐⭐⭐⭐☆
+                    </div>
+                    <button class="rate-button" data-recipe-id="samosa">Rate this (4/5)</button>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="submit">
+            <h2>Submit Your Own Recipe!</h2>
+            <form id="submission-form" class="submission-form">
+                <label for="s-dish">Dish Name:</label>
+                <input type="text" id="s-dish" required>
+
+                <label for="s-ingredients">Key Ingredients (List 3-4):</label>
+                <input type="text" id="s-ingredients" placeholder="e.g., chicken, yogurt, turmeric">
+
+                <label for="s-steps">Cooking Steps Summary:</label>
+                <textarea id="s-steps" rows="4" required></textarea>
+
+                <button type="submit">Submit Recipe for Review</button>
+                <p id="submit-message" class="feedback-message"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <p>&copy; 2025 Masala Magic. Bringing the taste of India to your home.</p>
+        <p>Email: cook@masalamagic.in</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

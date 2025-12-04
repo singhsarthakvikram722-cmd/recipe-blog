@@ -1,0 +1,244 @@
+/* General Styling */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8f0; /* Off-White/Creamy Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Impact', sans-serif;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #cc5500; /* Deep Orange/Saffron */
+    text-align: center;
+}
+
+h3 {
+    color: #663300; /* Dark Brown */
+}
+
+a {
+    color: #ff9900; /* Bright Orange */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #663300;
+    padding: 15px 40px;
+    color: white;
+    border-bottom: 5px solid #ff9900;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul a {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul a:hover {
+    color: #ffc300; /* Yellow accent on hover */
+}
+
+/* Hero Section */
+.hero-section {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fff9e6; /* Light yellow background */
+    border-bottom: 2px solid #ff9900;
+}
+
+.hero-section h2 {
+    color: #663300;
+    font-size: 2.2em;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Search Bar */
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.search-bar label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#recipe-search {
+    padding: 10px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#search-button {
+    padding: 10px 15px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Recipe Grid */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.recipe-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.recipe-card img, .recipe-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.recipe-card h3 {
+    padding: 0 15px;
+}
+
+.details {
+    padding: 0 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Rating System */
+.rating {
+    padding: 5px 15px;
+    font-size: 1.5em;
+    color: gold;
+}
+
+.rate-button {
+    background-color: #cc5500;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 10px 15px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submission Form */
+.submission-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.submission-form label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.submission-form input, .submission-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; 
+}
+
+.submission-form button {
+    background-color: #663300;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.05em;
+    margin-top: 20px;
+}
+
+.feedback-message {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #663300;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
